@@ -1,0 +1,25 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<h2> Nombre de personnage crées : {{count}} </h2>
+
+<div>
+  <label>name:
+    <input [(ngModel)]="nom" placeholder="name">
+  </label>
+
+  <button (click)="createUser()" name="test me">créer</button>
+</div>
+
+  <h1>Angular HttpClient Demo App</h1>
+  <h2>Foods</h2>
+  <ul>
+    <li *ngFor="let food of foods">{{food.productCode}} - {{food.productName}}</li>
+  </ul>
+
+  <app-hereos></app-hereos>
+
